@@ -5,8 +5,8 @@
 1. Устанавливаем Python 3.9.
 2. Устанавливаем зависимости:
 ```sh
-git clone https://github.com/EXG1O/VK-Bot.git
-cd VK-Bot
+git clone https://github.com/EXG1O/Discord-Bot.git
+cd Discord-Bot
 pip3 install -r requirements.txt
 ```
 3. На **41** строке вписываем свой "Discord Bot Token".
