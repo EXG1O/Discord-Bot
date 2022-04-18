@@ -1,10 +1,13 @@
-import color as Color
-import platform
+# Discord API
 import discord
 from discord.ext import commands
+
+# Другое
+import color as Color
+import platform
 import ctypes
 
-bot = commands.Bot(command_prefix = '!', intents = discord.Intents.all())
+bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
@@ -30,9 +33,9 @@ async def on_member_remove(member):
 async def on_message(message):
 	message.content = message.content.lower()
 	if message.content.startswith('!cat'):
-		embed = discord.Embed(color = 0xff9900, title = 'Cat 🤤')
-		embed.set_image(url = 'https://cdnn21.img.ria.ru/images/07e5/02/1a/1599054973_0:383:2048:1535_1920x0_80_0_0_82fec75b402fe33b2c83abff6c090b3e.jpg')
-		await message.channel.send(embed = embed)
+		embed = discord.Embed(color=0xff9900, title='Cat 🤤')
+		embed.set_image(url='https://cdnn21.img.ria.ru/images/07e5/02/1a/1599054973_0:383:2048:1535_1920x0_80_0_0_82fec75b402fe33b2c83abff6c090b3e.jpg')
+		await message.channel.send(embed=embed)
 
 if __name__ == '__main__':
 	if platform.system() == 'Windows':
